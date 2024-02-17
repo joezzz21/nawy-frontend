@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+    height: 5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    background-color: #f28f0d;
+    padding: 10px;
+    border-radius: 20px;
+}

@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.apartment{
+    width: 20rem;
+    height: fit-content;
+    margin: 10px; 
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    /* border: 1px solid #ddd; */
+    /* border-radius: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    width: 100%;
+    height: 10rem;
+    background-image: url('https://images.unsplash.com/photo-1604860361627-37fa58169084?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px; /* Rounded corners only at the top */
+  }
+
+.details {
+    width: 100%;
+}
+
+.price{
+    color: #f28f0d;
+}

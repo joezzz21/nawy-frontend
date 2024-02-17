@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.image-container {
+    width: 100%;
+    height: 20rem; /* Set the height of the image container to 70% of the card */
+    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    border-radius: 20px; /* Rounded corners only at the top */
+  }
+
+.details {
+    width: 100%;
+}
+
+.price{
+    color: #f28f0d;
+}
