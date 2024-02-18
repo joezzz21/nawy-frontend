@@ -1,9 +1,6 @@
 import "./styles.css";
 async function getData({apartmentID}:{apartmentID: string}) {
-    const res = await fetch(`http://localhost:8000/apartments/${apartmentID}`,  {
-        headers: {
-          'Cache-Control': 'no-store',
-        }})
+    const res = await fetch(`http://localhost:8000/apartments/${apartmentID}`, { next: { revalidate: 60 } })
    
     if (!res.ok) {
       throw new Error('Failed to fetch data')

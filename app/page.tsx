@@ -2,10 +2,7 @@ import Link from "next/link";
 import Apartment from "./components/Apartment";
 import "./styles.css"
 async function getData() {
-    const res = await fetch(`http://localhost:8000/apartments`,  {
-        headers: {
-          'Cache-Control': 'no-store',
-        }})
+    const res = await fetch(`http://localhost:8000/apartments`,  { next: { revalidate: 60 } })
    
     if (!res.ok) {
       throw new Error('Failed to fetch data')
